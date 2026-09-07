@@ -1,0 +1,25 @@
+[project]
+name = "miniagent"
+version = "0.1.0"
+description = "Mini Agent - a Manus-style intelligent agent platform"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "a2a-sdk[http-server]==0.3.11",
+    "aiosqlite>=0.22.1",
+    "dotenv>=0.9.9",
+    "fastapi>=0.136.1",
+    "filelock>=3.29.0",
+    "httpx>=0.28.0",
+    "json-repair>=0.59.10",
+    "mcp==1.22.0",
+    "openai>=2.36.0",
+    "pydantic-settings>=2.14.1",
+    "pydantic[email]>=2.13.4",
+    "redis>=7.4.0",
+    "requests>=2.34.2",
+    "sqlalchemy>=2.0.50",
+    "sse-starlette>=2.2.1",
+    "uvicorn[standard]>=0.47.0",
+    "pyyaml>=6.0",
+]

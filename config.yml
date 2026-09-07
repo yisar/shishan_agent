@@ -1,0 +1,32 @@
+llm_config:
+  base_url: https://token-plan-cn.xiaomimimo.com/v1
+  api_key: tp-cg00wuaxvwmh1gwiib9zettd8rz1yno7gmr6uvq3bg6z6f46
+  model_name: mimo-v2.5
+mcp_config:
+  mcpServers:
+    amap-maps-streamableHTTP:
+      transport: streamable_http
+      enable: true
+      description: null
+      env: null
+      command: null
+      args: null
+      url: https://mcp.amap.com/mcp?key=tp-cg00wuaxvwmh1gwiib9zettd8rz1yno7gmr6uvq3bg6z6f46
+      headers: null
+    linux-sandbox-shell:
+      transport: stdio
+      enable: true
+      description: null
+      env: null
+      command: sudo
+      args:
+      - uv
+      - run
+      - ./tool/shell.py
+      url: null
+      headers: null
+a2a_config:
+  a2aServers:
+  - id: 8873fef2-d7fb-4251-8630-5e4cda93ec09
+    base_url: http://localhost:9999
+    enabled: true
